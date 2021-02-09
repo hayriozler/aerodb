@@ -1,6 +1,6 @@
 ﻿using MediatR;
 
-namespace Common.Domain.Events
+namespace Shared.Domain.Events
 {
     public class EntityUpdated<T> : INotification where T : ParentEntity
 

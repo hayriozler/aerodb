@@ -1,4 +1,4 @@
-﻿namespace Common.Domain.Users
+﻿namespace AeroDb.Core.Users
 {
     public class UserFavoriteAirports
     {

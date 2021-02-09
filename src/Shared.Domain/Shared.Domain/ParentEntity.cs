@@ -1,4 +1,4 @@
-﻿namespace Common.Domain 
+﻿namespace Shared.Domain 
 { 
     public abstract class ParentEntity : AuditableEntity
     {

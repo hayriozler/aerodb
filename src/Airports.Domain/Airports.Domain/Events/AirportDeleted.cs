@@ -1,5 +1,5 @@
 ﻿using Airports.Domain.Entities;
-using Common.Domain.Events;
+using Shared.Domain.Events;
 
 namespace Airports.Domain.Events
 {

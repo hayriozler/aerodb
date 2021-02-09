@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Common.Domain
+namespace Shared.Domain
 {
     public abstract class AuditableEntity
     {

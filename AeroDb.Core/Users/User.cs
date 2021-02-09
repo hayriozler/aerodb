@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace Common.Domain.Users
+namespace AeroDb.Core.Users
 {
     public class User : ParentEntity
     {

@@ -1,0 +1,18 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MediatR" Version="9.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Caching.Abstractions" Version="5.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration" Version="5.0.0" />
+	<PackageReference Include="Microsoft.Extensions.Configuration.Binder" Version="5.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\src\Shared.Domain\Shared.Domain\Shared.Domain.csproj" />
+  </ItemGroup>
+
+</Project>
