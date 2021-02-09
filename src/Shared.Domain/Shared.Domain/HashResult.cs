@@ -1,4 +1,4 @@
-﻿namespace Shared.Domain
+﻿namespace Core.Domain
 {
     public class HashResult
     {

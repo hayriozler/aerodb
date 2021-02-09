@@ -13,9 +13,13 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Airlines.Domain", "src\Airl
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Audits.Domain", "src\Audits.Domain\Audits.Domain\Audits.Domain.csproj", "{D3F3929E-09B8-4992-9FA2-59A5B6ED8262}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Shared.Domain", "src\Shared.Domain\Shared.Domain\Shared.Domain.csproj", "{FF27AB54-6081-4037-A641-68D2E98689DA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Core.Domain", "src\Shared.Domain\Shared.Domain\Core.Domain.csproj", "{FF27AB54-6081-4037-A641-68D2E98689DA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AeroDb.Core", "AeroDb.Core\AeroDb.Core.csproj", "{C377AD7B-D70D-460F-BE2C-332D7DF543CE}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AeroDb.Helper", "AeroDb.Core\AeroDb.Helper.csproj", "{C377AD7B-D70D-460F-BE2C-332D7DF543CE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Airports.Services", "AeroDb.Services\Airports.Services.csproj", "{4D305134-AC1E-49A6-B126-EF7C32B6B300}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Core.Services", "Core.Services\Core.Services.csproj", "{F64F7C40-E9D8-415A-B052-7B25073F43EC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -43,6 +47,14 @@ Global
 		{C377AD7B-D70D-460F-BE2C-332D7DF543CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C377AD7B-D70D-460F-BE2C-332D7DF543CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C377AD7B-D70D-460F-BE2C-332D7DF543CE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4D305134-AC1E-49A6-B126-EF7C32B6B300}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4D305134-AC1E-49A6-B126-EF7C32B6B300}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4D305134-AC1E-49A6-B126-EF7C32B6B300}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4D305134-AC1E-49A6-B126-EF7C32B6B300}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F64F7C40-E9D8-415A-B052-7B25073F43EC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F64F7C40-E9D8-415A-B052-7B25073F43EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F64F7C40-E9D8-415A-B052-7B25073F43EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F64F7C40-E9D8-415A-B052-7B25073F43EC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -53,6 +65,8 @@ Global
 		{D3F3929E-09B8-4992-9FA2-59A5B6ED8262} = {5A1E580D-F1C7-46BD-B357-F09E3DC76198}
 		{FF27AB54-6081-4037-A641-68D2E98689DA} = {5A1E580D-F1C7-46BD-B357-F09E3DC76198}
 		{C377AD7B-D70D-460F-BE2C-332D7DF543CE} = {5A1E580D-F1C7-46BD-B357-F09E3DC76198}
+		{4D305134-AC1E-49A6-B126-EF7C32B6B300} = {5A1E580D-F1C7-46BD-B357-F09E3DC76198}
+		{F64F7C40-E9D8-415A-B052-7B25073F43EC} = {5A1E580D-F1C7-46BD-B357-F09E3DC76198}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {4316DB52-6222-4A6A-8064-D07A0F650E29}

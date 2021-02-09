@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 using Airports.Domain.Enums;
-using Shared.Domain;
+using Core.Domain;
 
 namespace Airports.Domain.Entities
 {

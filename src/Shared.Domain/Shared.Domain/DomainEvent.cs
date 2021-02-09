@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Shared.Domain
+namespace Core.Domain
 {
     public abstract class DomainEvent
     {

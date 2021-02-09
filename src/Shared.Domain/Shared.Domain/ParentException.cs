@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Shared.Domain
+namespace Core.Domain
 {
     [Serializable]
     public abstract class ParentException : Exception

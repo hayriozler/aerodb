@@ -1,6 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using Core.Domain;
 using Microsoft.Extensions.Configuration;
-using Shared.Domain;
 
 namespace AeroDb.Core.Configs
 {

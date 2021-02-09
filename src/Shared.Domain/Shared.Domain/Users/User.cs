@@ -1,8 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
-using Shared.Domain;
 
-namespace AeroDb.Core.Users
+namespace Core.Domain
 {
     public class User : ParentEntity
     {
@@ -11,7 +10,7 @@ namespace AeroDb.Core.Users
         public string Name { get; set; }
         public string Surname { get; set; }
         public string Email { get; set; }
-        public string Password { get; set; }
+        public string PasswordHash { get; set; }
         public string PasswordSalt { get; set; }
         public bool Active { get; set; }
         public bool Deleted { get; set; }
