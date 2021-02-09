@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using MediatR;
 using Microsoft.Extensions.Caching.Memory;
 using Microsoft.Extensions.Primitives;
+using Shared.Domain;
 using Shared.Domain.Events;
 
 namespace AeroDb.Core.Caching

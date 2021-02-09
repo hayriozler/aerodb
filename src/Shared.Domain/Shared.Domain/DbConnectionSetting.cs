@@ -2,13 +2,7 @@
 {
     public class DbConnectionSetting
     {
-       
-        public string Url
-        {
-            get;
-            set;
-        }
-        public int Port
+        public string HostNames
         {
             get;
             set;
@@ -23,11 +17,5 @@
             get;
             set;
         }
-        public int ConnectTimeoutMS
-        {
-            get;
-            set;
-        }
-        public string ReplicaSet { get; set; }
     }
 }

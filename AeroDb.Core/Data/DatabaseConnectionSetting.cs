@@ -1,38 +1,25 @@
 ﻿using System;
 using System.Text;
 using AeroDb.Core.Configs;
+using AeroDb.Core.Security;
 
 namespace AeroDb.Core.Data
 {
     public static class DatabaseConnectionSetting
     {
-        private static string _prefix = "mongo://";
-        private static bool? _databaseIsInstalled;
-        private static StringBuilder _connectionString;
-        public static bool DatabaseIsInstalled()
+        private static string _connectionString;
+        private static void InitConnectionString()
         {
-            if (!_databaseIsInstalled.HasValue)
-            {
-               
-            }
-            return _databaseIsInstalled.Value;
-        }
-        public static void InitConnectionString()
-        {
-            //mongodb://mongodb0.example.com:27017 standAlone
-            //mongodb://mongodb0.example.com:27017,mongodb1.example.com:27017,mongodb2.example.com:27017/?replicaSet=myRepl  //replicaSet
-            //mongodb://mongos0.example.com:27017,mongos1.example.com:27017,mongos2.example.com:27017 //Shareded Cluster
-
-            var settings = ConfigReader.ConnectionSetting;
-            _connectionString.AppendLine(_prefix);
-            foreach (var setting in settings)
-            {
-                _connectionString.AppendLine(setting.
-            }
+            //mongodb://[username:password@]host1[:port1][,...hostN[:portN]][/[defaultauthdb][?options]]
+            //username:password@
+            var setting = ConfigReader.ConnectionSetting;
+            _connectionString = $"mongodb://{setting.UserName}:{ Protection.Unprotect(setting.Password)}{setting.HostNames}";
         }
         public static string ConnectionString()
         {
-            return _connectionString;
+            if(string.IsNullOrEmpty(_connectionString.ToString()))
+            InitConnectionString();
+            return _connectionString.ToString();
         }
     }
 }

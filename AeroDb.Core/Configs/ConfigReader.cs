@@ -6,7 +6,7 @@ namespace AeroDb.Core.Configs
 {
     public static class ConfigReader
     {
-        private static List<DbConnectionSetting> _connectionSetting;
+        private static DbConnectionSetting _connectionSetting;
 
         public static IConfiguration Configuration { get; set; }
         public static T ReadConfig<T>(string section) where T : class, new()
@@ -20,13 +20,13 @@ namespace AeroDb.Core.Configs
         {
             return Configuration.GetSection(section);
         }
-        public static List<DbConnectionSetting> ConnectionSetting
+        public static DbConnectionSetting ConnectionSetting
         {
             get
             {
                 if (_connectionSetting is null)
                 {
-                    _connectionSetting = new List<DbConnectionSetting>();
+                    _connectionSetting = new DbConnectionSetting();
                     var connectionSetting = Configuration.GetSection("DbConnections");
                     if (connectionSetting != null)
                         connectionSetting.Bind(_connectionSetting);

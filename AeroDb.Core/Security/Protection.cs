@@ -4,7 +4,7 @@ using System.Security.Cryptography;
 
 namespace AeroDb.Core.Security
 {
-    public static class SecurityProtection
+    public static class Protection
     {
         private static string _goldenKey = "dmVyeSFjb21wbGV4QEtleSEhc2hvdWxkXmNvbWVIZXI=";
         private static string _iv = "dk5leHQtQXBwbGljYXRpbw==";//must be at least 16 bytes
