@@ -1,19 +1,19 @@
 ﻿using System.Threading;
 using System.Threading.Tasks;
-using AeroDb.Core.Caching;
 using AeroDb.Services.Infrastructure.Handler.Cache;
 using Airports.Domain.Entities;
 using Core.Domain;
+using Core.Domain.Caching;
 using MediatR;
 
 namespace Airports.Services.Infrastructure
 {
-    public class AirportNotificatioHandler : INotificationHandler<EntityCreated<Airport>>, 
+    public class AirportNotificationHandler : INotificationHandler<EntityCreated<Airport>>, 
         INotificationHandler<EntityUpdated<Airport>>, 
         INotificationHandler<EntityDeleted<Airport>>
     {
         private ICacheManager _cacheManager;
-        public AirportNotificatioHandler(ICacheManager cacheManager)
+        public AirportNotificationHandler(ICacheManager cacheManager)
         {
             _cacheManager = cacheManager;
         }

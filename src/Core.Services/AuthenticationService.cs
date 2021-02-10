@@ -1,8 +1,6 @@
-﻿using System;
-using System.Security.Claims;
+﻿using System.Security.Claims;
 using System.Threading.Tasks;
 using AeroDb.Core.Jwt;
-using AeroDb.Core.Security;
 using Core.Domain;
 using Core.Domain.Users;
 using MediatR;

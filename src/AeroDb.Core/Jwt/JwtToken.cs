@@ -1,7 +1,7 @@
 ﻿using System;
 using System.IdentityModel.Tokens.Jwt;
 
-namespace Core.Domain
+namespace AeroDb.Core.Jwt
 {
     public class JwtToken
     {
@@ -14,13 +14,5 @@ namespace Core.Domain
 
         public DateTime ValidTo => token.ValidTo;
         public string Value => new JwtSecurityTokenHandler().WriteToken(this.token);
-    }
-
-    public class GenereatedToken
-    {
-        public string Token { get; set; }
-        public DateTime ExpirationDateTime { get; set; }
-        public string RefreshToken { get; set; }
-        public DateTime RefreshExpirationDateTime { get; set; }
     }
 }

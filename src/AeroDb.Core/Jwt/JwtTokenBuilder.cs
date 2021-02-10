@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.IdentityModel.Tokens.Jwt;
 using System.Linq;
 using System.Security.Claims;
-using Core.Domain;
 using Microsoft.IdentityModel.Tokens;
 
 namespace AeroDb.Core.Jwt

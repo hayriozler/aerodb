@@ -3,8 +3,7 @@ using AeroDb.Core.Security;
 
 namespace Core.Services
 {
-    public class UserService
-    : IUserService
+    public class UserService : IUserService
     {
         public UserService()
         {

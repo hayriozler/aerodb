@@ -5,11 +5,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="5.0.3" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <ProjectReference Include="..\AeroDb.Core\AeroDb.Helper.csproj" />
+    <ProjectReference Include="..\AeroDb.Core\AeroDb.Core.csproj" />
+    <ProjectReference Include="..\Shared.Domain\Shared.Domain\Core.Domain.csproj" />
   </ItemGroup>
 
 </Project>

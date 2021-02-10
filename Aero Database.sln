@@ -7,17 +7,17 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{5A1E580D-F1C
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{F21F68F1-C784-4670-A2CC-487AE03B8A53}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Airports.Domain", "src\Airports.Domain\Airports.Domain\Airports.Domain.csproj", "{4BD96A42-6846-4805-A5C3-F780B4462A74}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Airports.Domain", "src\Airports.Domain\Airports.Domain\Airports.Domain.csproj", "{4BD96A42-6846-4805-A5C3-F780B4462A74}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Airlines.Domain", "src\Airlines.Domain\Airlines.Domain\Airlines.Domain.csproj", "{C7A9F519-2863-41A4-A1B3-68C8AFA09B70}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Airlines.Domain", "src\Airlines.Domain\Airlines.Domain\Airlines.Domain.csproj", "{C7A9F519-2863-41A4-A1B3-68C8AFA09B70}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Core.Domain", "src\Shared.Domain\Shared.Domain\Core.Domain.csproj", "{FF27AB54-6081-4037-A641-68D2E98689DA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AeroDb.Helper", "src\AeroDb.Core\AeroDb.Helper.csproj", "{C377AD7B-D70D-460F-BE2C-332D7DF543CE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AeroDb.Core", "src\AeroDb.Core\AeroDb.Core.csproj", "{C377AD7B-D70D-460F-BE2C-332D7DF543CE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Airports.Services", "src\AeroDb.Services\Airports.Services.csproj", "{4D305134-AC1E-49A6-B126-EF7C32B6B300}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Airports.Services", "src\AeroDb.Services\Airports.Services.csproj", "{4D305134-AC1E-49A6-B126-EF7C32B6B300}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Core.Services", "src\Core.Services\Core.Services.csproj", "{F64F7C40-E9D8-415A-B052-7B25073F43EC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Core.Services", "src\Core.Services\Core.Services.csproj", "{F64F7C40-E9D8-415A-B052-7B25073F43EC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

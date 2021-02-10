@@ -3,12 +3,11 @@ using System.Collections.Concurrent;
 using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
-using Core.Domain;
 using MediatR;
 using Microsoft.Extensions.Caching.Memory;
 using Microsoft.Extensions.Primitives;
 
-namespace AeroDb.Core.Caching
+namespace Core.Domain.Caching
 {
     public class MemoryCacheManager : ICacheManager
     {

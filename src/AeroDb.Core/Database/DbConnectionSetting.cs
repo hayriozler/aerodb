@@ -1,4 +1,4 @@
-﻿namespace Core.Domain
+﻿namespace AeroDb.Core.Database
 {
     public class DbConnectionSetting
     {

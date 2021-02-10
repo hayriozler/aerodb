@@ -1,4 +1,4 @@
-﻿using Core.Domain;
+﻿using AeroDb.Core.Database;
 using Microsoft.Extensions.Configuration;
 
 namespace AeroDb.Core.Configs

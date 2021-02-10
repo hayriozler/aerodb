@@ -1,9 +1,7 @@
-﻿using System;
-using System.Text;
-using AeroDb.Core.Configs;
+﻿using AeroDb.Core.Configs;
 using AeroDb.Core.Security;
 
-namespace AeroDb.Core.Data
+namespace AeroDb.Core.Database
 {
     public static class DatabaseConnectionSetting
     {
