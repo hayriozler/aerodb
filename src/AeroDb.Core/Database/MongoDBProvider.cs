@@ -1,7 +1,12 @@
-﻿namespace AeroDb.Core.Database
+﻿using MongoDB.Driver;
+
+namespace AeroDb.Core.Database
 {
-    public class MongoDBProvider
+    public class MongoDBProvider : IMongoDBProvider
     {
-        public string ConnectionString => DatabaseConnectionSetting.ConnectionString();
+        public MongoClient MongoClient => new MongoClient(new MongoUrl(DatabaseConnectionSetting.ConnectionString()));
+        public IMongoDatabase MongoDatabase => MongoClient.GetDatabase(DatabaseConnectionSetting.DatabaseName);
+        public string DatabaseName => DatabaseConnectionSetting.DatabaseName;
     }
+
 }

@@ -17,5 +17,6 @@
             get;
             set;
         }
+        public string DatabaseName { get; set; }
     }
 }

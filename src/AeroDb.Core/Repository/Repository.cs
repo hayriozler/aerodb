@@ -10,37 +10,15 @@ namespace AeroDb.Core.Jwt
 {
     public class Repository<T> : IRepository<T> where T : ParentEntity
     {
-        protected IMongoCollection<T> _collection;
-        public IMongoCollection<T> Collection
+        private IMongoCollection<T> _collection;
+        public Repository(IMongoDBProvider mongoDBProvider)
         {
-            get
-            {
-                return _collection;
-            }
-        }
-
-        protected IMongoDatabase _database;
-        public IMongoDatabase Database
-        {
-            get
-            {
-                return _database;
-            }
-        }
-
-        public Repository()
-        {
-            var mongoDBProvider = new MongoDBProvider();
-            var client = new MongoClient(mongoDBProvider.ConnectionString);
-            var databaseName = new MongoUrl(mongoDBProvider.ConnectionString).DatabaseName;
-            _database = client.GetDatabase(databaseName);
-            _collection = _database.GetCollection<T>(typeof(T).Name);
+            _collection = mongoDBProvider.MongoDatabase.GetCollection<T>(typeof(T).Name);
         }
         public Task<T> GetByIdAsync(string id)
         {
             return _collection.Find(e => e.Id == id).FirstOrDefaultAsync();
         }
-
         public async Task<T> InsertAsync(T entity)
         {
             await _collection.InsertOneAsync(entity);
@@ -86,5 +64,7 @@ namespace AeroDb.Core.Jwt
         {
             get { return _collection.AsQueryable(); }
         }
+
+        public IMongoCollection<T> Collection => _collection;
     }
 }
