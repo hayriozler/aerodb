@@ -13,11 +13,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Airlines.Domain", "src\Airl
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Core.Domain", "src\Shared.Domain\Shared.Domain\Core.Domain.csproj", "{FF27AB54-6081-4037-A641-68D2E98689DA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AeroDb.Helper", "AeroDb.Core\AeroDb.Helper.csproj", "{C377AD7B-D70D-460F-BE2C-332D7DF543CE}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AeroDb.Helper", "src\AeroDb.Core\AeroDb.Helper.csproj", "{C377AD7B-D70D-460F-BE2C-332D7DF543CE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Airports.Services", "AeroDb.Services\Airports.Services.csproj", "{4D305134-AC1E-49A6-B126-EF7C32B6B300}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Airports.Services", "src\AeroDb.Services\Airports.Services.csproj", "{4D305134-AC1E-49A6-B126-EF7C32B6B300}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Core.Services", "Core.Services\Core.Services.csproj", "{F64F7C40-E9D8-415A-B052-7B25073F43EC}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Core.Services", "src\Core.Services\Core.Services.csproj", "{F64F7C40-E9D8-415A-B052-7B25073F43EC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
