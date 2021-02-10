@@ -10,7 +10,8 @@
 
   <ItemGroup>
     <ProjectReference Include="..\AeroDb.Core\AeroDb.Helper.csproj" />
-    <ProjectReference Include="..\src\Airports.Domain\Airports.Domain\Airports.Domain.csproj" />
+    <ProjectReference Include="..\Airports.Domain\Airports.Domain\Airports.Domain.csproj" />
+    <ProjectReference Include="..\Shared.Domain\Shared.Domain\Core.Domain.csproj" />
   </ItemGroup>
 
 </Project>
