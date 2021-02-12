@@ -2,6 +2,6 @@
 {
     [CollectioName("Regions")]
     public class Region : ParentEntity { 
-    public string Name { get; set; }
+        public string Name { get; set; }
     }
 }
