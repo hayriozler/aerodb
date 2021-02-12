@@ -4,9 +4,9 @@ using Core.Domain;
 using MongoDB.Driver;
 using MongoDB.Driver.Linq;
 
-namespace AeroDb.Core.Jwt
+namespace AeroDb.Core.Repositories
 {
-    public interface IRepository<T> where T : ParentEntity
+    public interface IRepository<T> where T: ParentEntity
     {
         IMongoCollection<T> Collection { get; }
         Task<T> GetByIdAsync(string id);

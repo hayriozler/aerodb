@@ -1,4 +1,4 @@
-﻿namespace Core.Domain
+﻿namespace Core.Domain.Users
 {
     public class UserFavoriteAirlines
     {

@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MongoDB.Driver" Version="2.11.6" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\AeroDb.Core\AeroDb.Core.csproj" />
+    <ProjectReference Include="..\Core.Domain\Core.Domain.csproj" />
+  </ItemGroup>
+
+  <Target Name="PreBuild" BeforeTargets="PreBuildEvent">
+    <Exec Command="SET path=$(TargetDir)\Entities&#xD;&#xA;if not exist &quot;%25path%25&quot; mkdir &quot;%25path%25&quot;&#xD;&#xA;copy /Y &quot;$(ProjectDir)\Entities\*.dll&quot; &quot;$(TargetDir)\Entities\*.dll&quot;" />
+  </Target>
+
+</Project>

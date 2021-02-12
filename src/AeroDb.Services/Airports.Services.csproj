@@ -6,12 +6,12 @@
 
   <ItemGroup>
     <PackageReference Include="MediatR" Version="9.0.0" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="5.0.1" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\AeroDb.Core\AeroDb.Core.csproj" />
-    <ProjectReference Include="..\Airports.Domain\Airports.Domain\Airports.Domain.csproj" />
-    <ProjectReference Include="..\Shared.Domain\Shared.Domain\Core.Domain.csproj" />
+    <ProjectReference Include="..\Airports.Domain\Airports.Domain.csproj" />
   </ItemGroup>
 
 </Project>

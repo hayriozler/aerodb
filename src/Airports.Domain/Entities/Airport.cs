@@ -4,6 +4,7 @@ using Core.Domain;
 
 namespace Airports.Domain.Entities
 {
+    [CollectioName("Airports")]
     public class Airport : ParentEntity
     {
         public IEnumerable<ArrivalBelt> ArrivalBelts { get; }

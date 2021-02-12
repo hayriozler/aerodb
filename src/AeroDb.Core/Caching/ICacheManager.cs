@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Threading.Tasks;
 
-namespace Core.Domain.Caching
+namespace AeroDb.Core.Caching
 {
     public interface ICacheManager
     {

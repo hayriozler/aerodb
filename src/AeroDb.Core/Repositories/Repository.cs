@@ -1,14 +1,14 @@
-﻿using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using AeroDb.Core.Database;
+﻿using AeroDb.Core.Database;
 using Core.Domain;
 using MongoDB.Driver;
 using MongoDB.Driver.Linq;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
 
-namespace AeroDb.Core.Jwt
+namespace AeroDb.Core.Repositories
 {
-    public class Repository<T> : IRepository<T> where T : ParentEntity
+    public class Repository<T> : IRepository<T> where T: ParentEntity
     {
         private IMongoCollection<T> _collection;
         public Repository(IMongoDBProvider mongoDBProvider)

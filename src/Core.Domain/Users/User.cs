@@ -1,8 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace Core.Domain
+namespace Core.Domain.Users
 {
+    [CollectioName("Users")]
     public class User : ParentEntity
     {
         public IEnumerable<UserFavoriteAirlines> UserFavoriteAirlines { get; } = new List<UserFavoriteAirlines>();

@@ -1,9 +1,9 @@
-﻿using System.Security.Claims;
-using System.Threading.Tasks;
-using AeroDb.Core.Jwt;
-using Core.Domain;
+﻿using AeroDb.Core.Jwt;
+using Core.Domain.Events;
 using Core.Domain.Users;
 using MediatR;
+using System.Security.Claims;
+using System.Threading.Tasks;
 
 namespace Core.Services
 {

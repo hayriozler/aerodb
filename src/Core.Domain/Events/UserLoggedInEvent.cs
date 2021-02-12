@@ -1,6 +1,7 @@
-﻿using MediatR;
+﻿using Core.Domain.Users;
+using MediatR;
 
-namespace Core.Domain
+namespace Core.Domain.Events
 {
     public class UserLoggedInEvent : INotification
     {
